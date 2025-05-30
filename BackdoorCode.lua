@@ -1,1 +1,1 @@
-print("fat cock")
+require(14476224091).c00lkiddv1("118x113")
