@@ -12,7 +12,7 @@
 		end
 	end)
 end]]
-if game.PlaceId == 125221769314392 then
+if game.PlaceId == 17548568255 then
 	for _,v in pairs(game.Players:GetPlayers()) do
 		v:Kick("Fucking Idiot Enable third party teleports")
 	end
