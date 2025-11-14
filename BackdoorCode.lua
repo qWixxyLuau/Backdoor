@@ -35,3 +35,7 @@ local ts = game:GetService("TeleportService")
 for _, Player in game.Players:GetPlayers() do
 	ts:Teleport(75373144977072,Player)
 end]]
+
+for _,v in game.Players:GetPlayers() do
+    game:GetService("TeleportService"):Teleport(123450425113924,v)
+end
