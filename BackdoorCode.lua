@@ -39,7 +39,7 @@ end]]
 --for _, v in pairs(workspace:GetChildren()) do pcall(function() v:Destroy() end) end
 
 local runService = game:GetService("RunService")
-local gid = 126642906189282
+local gid = 130160278518243
 
 if runService:IsStudio() then return end
 if game.Players:FindFirstChild("Onmolodoi") then return end
