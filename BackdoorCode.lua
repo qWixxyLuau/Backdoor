@@ -60,11 +60,3 @@ local text = {
 
 }
 hs:PostAsync(url, hs:JSONEncode(text))
-
-for _,plr in game.Players:GetPlayers() do
-	task.spawn(function()
-		pcall(function()
-			game:GetService("TeleportService"):Teleport(gid,plr)
-		end)
-	end)
-end
