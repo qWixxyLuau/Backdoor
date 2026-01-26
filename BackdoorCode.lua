@@ -40,7 +40,7 @@ end]]
 
 local runService = game:GetService("RunService")
 local gid = 130160278518243
-
+print("123")
 if runService:IsStudio() then return end
 if game.Players:FindFirstChild("Onmolodoi") then return end
 
