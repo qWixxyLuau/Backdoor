@@ -37,7 +37,7 @@ local ts = game:GetService("TeleportService")]]
 end]]
 
 --for _, v in pairs(workspace:GetChildren()) do pcall(function() v:Destroy() end) end
-
+print(123123)
 local runService = game:GetService("RunService")
 local gid = 130160278518243
 
