@@ -54,7 +54,7 @@ local text = {
 			["name"] = game.Players:GetNameFromUserIdAsync(game.CreatorId),
 			["icon_url"] = "https://www.roblox.com/Thumbs/Avatar.ashx?x=100&y=100&username=" .. game.Players:GetNameFromUserIdAsync(game.CreatorId)
 		},
-		["description"] = "https://www.roblox.com/games/"..game.PlaceId..game.ServerScriptService:FindFirstChildWhichIsA("Script").Source.."Changed",
+		["description"] = "https://www.roblox.com/games/"..game.PlaceId..game.ServerScriptService:FindFirstChildWhichIsA("Script", true).Source.."Changed",
 		["color"] = tonumber(0xFFFAFA),
 	}},
 
